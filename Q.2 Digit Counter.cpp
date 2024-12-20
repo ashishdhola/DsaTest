@@ -23,7 +23,7 @@ int main() {
 
     do {
         count++;
-        number /= 10;  
+        number = number /  10;  
     } while (number != 0);
 
     cout << "Total number of digits: " << count << endl;
