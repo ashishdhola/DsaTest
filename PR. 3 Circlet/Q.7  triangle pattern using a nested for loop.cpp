@@ -5,29 +5,32 @@
 //      *     *
 //     * * * * *
 
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main()
+
+int main() 
 {
-    int n = 5;
-    for (int i = 1; i <= n; i++)
+    int n=5; 
+    
+    for(int i=1;i<=n;i++) 
     {
-        for (int k = 1; k <= n - i; k++)
+       
+        for(int j=1;j<=n-i;j++) 
         {
-            cout << "  ";
+            cout << " ";  
         }
-        for (int j = 1; j <= 2 * i - 1; j++)
+
+        for(int j=1;j<=i;j++) 
         {
-            if (j == 1 || j == 2 * i - 1 || i == n)
+            if(j == 1 || j == i || i == n) 
             {
-                cout << "* ";
+                cout << "* ";  
             }
-            else
+            else 
             {
-                cout << "  ";
+                cout << "  "; 
             }
         }
-        cout << endl;
+        cout <<endl;
     }
-    return 0;
 }
